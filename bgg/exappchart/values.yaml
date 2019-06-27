@@ -1,0 +1,20 @@
+# Default values for exappchart.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+APIKEY: "55bb0e0268334015ed8b9cd39cf91c951b26d7a178fd9270b87156e056ed0acb"
+
+image:
+  repository: balanus/exapp
+  tag: latest
+  pullPolicy: IfNotPresent
+
+imagePullSecrets: []
+nameOverride: ""
+fullnameOverride: ""
+
+service:
+  type: NodePort
+  port: 80
+
